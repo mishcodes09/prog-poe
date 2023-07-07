@@ -10,7 +10,7 @@ public class loginTest {
     }
 
     @Test
-    public void testCheckUserName() {
+    public void testCheckUserName() {  //W3Schools, 2023
         System.out.println("checkUserName");
         String username = "";
         login instance = new login();
@@ -32,12 +32,13 @@ public class loginTest {
     }
 
     @Test
-    public void testRegisterUser() {
+    public void testRegisterUser() {//(Farrell, 2019)
         System.out.println("registerUser");
         String username = "";
         String password = "";
         login instance = new login();
-        String expResult = "Username is not correctly formatted, please ensure that your username contains an underscore and is no more than 5 characters in length";
+        String expResult = "Username is not correctly formatted, please ensure that your "
+                + "username contains an underscore and is no more than 5 characters in length";
         String result = instance.registerUser(username, password);
         assertEquals(expResult, result);
         
@@ -57,7 +58,7 @@ public class loginTest {
     }
 
     @Test
-    public void testReturnLoginStatus() {
+    public void testReturnLoginStatus() { //Mandiya, 2021
         System.out.println("returnLoginStatus");
         boolean LoggedIn = false;
         String firstName = "";
@@ -70,3 +71,7 @@ public class loginTest {
     }
     
 }
+
+// Mandliya, A. 2021. Validate Password in Java, 11 January 2021. [Online]. Available at: https://java2blog.com/validate-password-java/[Accessed 2 May 2023]
+// Farrel. J. 2018. Java Programming. 9th ed. Boston; Cengage.
+// W3Schools.com. 2023. Java Methods. [Online]. Available at: https://www.w3schools.com/java/java_methods.asp.[Accessed 2 May 2023]

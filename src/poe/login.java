@@ -39,7 +39,7 @@ public class login {
         } else {
             yourUsername = username;
             yourPassword = password;
-            return "User registered successfully!!";
+            return "User registered!!";
         }
     }
 
